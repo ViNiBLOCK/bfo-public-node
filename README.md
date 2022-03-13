@@ -14,7 +14,7 @@ In a consortium setting, there are only advantages to using a Proof-of-Authority
 
 ![BFO network Statistics](bfo-network-statistics.png)
 
-BFO network is such a semi-public network. It has been configured in such a way that transaction costs (gas) that are associated with Ethereum transactions are removed and blocks are created in 5 second intervals. This eliminates the need for complex steps to fund wallets prior to executing a transaction on the network and it prevents having to deal with the unstable cryptocurrency exchange rates. More statistics on https://stats-bfo.bfo-dlt.com/
+BFO network is such a semi-public network. It has been configured in such a way that transaction costs (gas) that are associated with Ethereum transactions are removed and blocks are created in 6 second intervals. This eliminates the need for complex steps to fund wallets prior to executing a transaction on the network and it prevents having to deal with the unstable cryptocurrency exchange rates. More statistics on https://stats-bfo.bfo-dlt.com/
 
 Running a node
 To run a node on the network, you should use the provided Docker container.
