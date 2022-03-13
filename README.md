@@ -7,7 +7,7 @@ The BFO network is an open, Proof-of-Authority, Ethereum network with 6 second b
 ## About
 The blockchain network underlying this system is Ethereum, using a Proof-of-Authority consensus engine. Proof-of-Authority is a replacement for Proof-of-Work and is well suited for consortium and semi-public chain setups as it does not depend on nodes solving arbitrarily complex mathematical problems, but instead uses a set of "authorities" - nodes that are explicitly allowed to create new blocks and secure the blockchain. A Poof-of-Authority chain has to be signed off by the majority of authorities and when this is done, the record is permanently committed and recorded.
 
-In a consortium setting, there are only advantages to using a Proof-of-Authority network. It is more secure than a small Proof-of-Work network since an attacker who gains unwanted connection or who has hacked an authority cannot overwhelm the network to modify or revert transaction. It is less computationally intensive, more performant and more predictable. Teh tradeoff is that there is a level of trust for the nodes that have been assigned the mining authority.
+In a consortium setting, there are only advantages to using a Proof-of-Authority network. It is more secure than a small Proof-of-Work network since an attacker who gains unwanted connection or who has hacked an authority cannot overwhelm the network to modify or revert transaction. It is less computationally intensive, more performant and more predictable. The tradeoff is that there is a level of trust for the nodes that have been assigned the mining authority.
 
 
 ## BFO network Statistics
@@ -26,11 +26,6 @@ To run the node, start the BFO network Docker container like so:
 ```
 $ docker run -d bfodlt/public-besu-peer
 
-Untagged: bfodlt/public-besu-peer:latest
-Untagged: bfodlt/public-besu-peer@sha256:64d941a895b3fa4d342a213b494c7d0aafce537884d4b930cde8aa7d9e82fe12
-Deleted: sha256:478555375506342a97baed8ce03ac5de98cae5ab39cf12431aa68b6ab360820c
-Deleted: sha256:53ebed777fbbae9138412881ea85ecbb4058dbf0e59d71c7810d51148cf92a30
-PS E:\data\documenten\bfo-public-node> docker run -d bfodlt/public-besu-peer
 Unable to find image 'bfodlt/public-besu-peer:latest' locally
 latest: Pulling from bfodlt/public-besu-peer
 ea362f368469: Already exists
