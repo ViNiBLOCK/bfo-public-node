@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  ethereum-node:
+    image: "bfodlt/public-besu-peer"
+    restart: always
+    ports:
+      - "30303:30303"
+      - "30303:30303/udp"
+      - "8545:8545"
+  ethstats-client:
+    image: "bfodlt/ethstats-client"
+    restart: always
+    depends_on:
+      - "ethereum-node"
+    command:
+      [
+        "./scripts/wait-for-it.sh",
+        "ethereum-node:8545",
+        "--",
+        "npm",
+        "run",
+        "start",
+      ]
+    environment:
+      INSTANCE_NAME: "BFO-EUROPE-VINIBLOCK-2"
+      WS_SECRET: "2tzi6gckshPAagLAbxWo"
+      WS_SERVER: "https://stats-bfo.bfo-dlt.com"
+      RPC_HOST: "ethereum-node"
