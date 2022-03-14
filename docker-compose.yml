@@ -23,7 +23,7 @@ services:
         "start",
       ]
     environment:
-      INSTANCE_NAME: "YOUR-NODE-NAME"
+      INSTANCE_NAME: "BFO-REGION-YOUR-NODE-NAME"
       WS_SECRET: "2tzi6gckshPAagLAbxWo"
       WS_SERVER: "https://stats-bfo.bfo-dlt.com"
       RPC_HOST: "ethereum-node"
