@@ -28,9 +28,9 @@ $ docker run -d bfodlt/public-besu-peer
 
 Unable to find image 'bfodlt/public-besu-peer:latest' locally
 latest: Pulling from bfodlt/public-besu-peer
-ea362f368469: Already exists
-b6320c011764: Already exists
-33796e6ad525: Already exists
+ea362f368469: Pull complete
+b6320c011764: Pull complete
+33796e6ad525: Pull complete
 7aed7ac692f6: Pull complete
 Digest: sha256:64d941a895b3fa4d342a213b494c7d0aafce537884d4b930cde8aa7d9e82fe12
 Status: Downloaded newer image for bfodlt/public-besu-peer:latest
